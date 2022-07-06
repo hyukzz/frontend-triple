@@ -6,19 +6,19 @@ function MeasureUser() {
     <MeasureUserSection>
       <MeasureUserText>
         <strong>
-          <CountUp end={700}></CountUp>만 명
+          <CountUp endCount={700}></CountUp>만 명
         </strong>
         의 여행자
       </MeasureUserText>
       <MeasureUserText>
         <strong>
-          <CountUp end={100}></CountUp>만 개
+          <CountUp endCount={100}></CountUp>만 개
         </strong>
         의 여행 리뷰
       </MeasureUserText>
       <MeasureUserText>
         <strong>
-          <CountUp end={470} />만 개
+          <CountUp endCount={470} />만 개
         </strong>
         의 여행 일정
       </MeasureUserText>
