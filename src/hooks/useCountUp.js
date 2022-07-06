@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-function UseCountUp({ end }) {
+function UseCountUp({ endCount }) {
   // countUp으로 인해 변경된 상태를 저장
   const [count, setCount] = useState(0)
 
@@ -14,13 +14,15 @@ function UseCountUp({ end }) {
 
     let countUp = setInterval(() => {
       let interval = easeOutQuartEffect((currentNum += 1 / 500))
-      setCount(Math.ceil(interval * end))
+      const currentCount = Math.ceil(interval * endCount)
+
+      setCount(currentCount)
     })
 
     setTimeout(() => {
       clearInterval(countUp)
     }, 2000)
-  }, [end])
+  }, [endCount])
   return <>{count}</>
 }
 export default UseCountUp
