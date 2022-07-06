@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import RecordSection from 'pages/RecordSection'
+import RecordPage from 'pages/RecordPage'
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<RecordSection />}></Route>
+        <Route exact path="/" element={<RecordPage />}></Route>
       </Routes>
     </Router>
   )
