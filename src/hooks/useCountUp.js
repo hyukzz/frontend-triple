@@ -16,8 +16,7 @@ function UseCountUp({ endCount }) {
         easeOutQuartEffect(currentNum / (currentMax / intervalSpace)),
         1,
       )
-      const currentCount = Math.ceil(endCount * interval)
-      console.log(currentNum)
+      const currentCount = Math.round(endCount * interval)
       setCount(currentCount)
     }, intervalSpace)
 
